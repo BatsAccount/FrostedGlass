@@ -1,4 +1,6 @@
- /*
+/**
+ * @name Fire Fox
+ * @author Gibbu#1211
  * @version 2.0.0
  * @description Display your picture of choice with adjustable blur and brightness.
  * @source https://github.com/DiscordStyles/FrostedGlass
@@ -9,6 +11,7 @@
  * @BDEditor Frosted Glass
 */
 
+@import url('https://fonts.googleapis.com/css2?family=:wght@100;300;400;500;700&display=swap');
 @import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
 @import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
 @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
@@ -16,295 +19,41 @@
 @import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
 
 :root {
-  --background-image: url('https://cdn.discordapp.com/attachments/838615627227987969/941321573074337812/discord2.jpg');
+  --background-image: url('https://i.imgur.com/kYW2H5C.jpg');
   --background-image-blur: 5px;
   --background-image-size: cover;
   --background-image-position: center;
   --popout-image: var(--background-image);
-  --popout-image-blur: 11px;
+  --popout-image-blur: 12px;
   --popout-image-size: cover;
   --popout-image-position: center;
   --overlay-image: var(--background-image);
-  --overlay-image-blur: 13px;
+  --overlay-image-blur: 12px;
   --overlay-image-size: cover;
   --overlay-image-position: center;
   --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
   --home-button-size: cover;
   --home-button-position: center;
-  --serverlist-brightness: 0.7;
-  --left-brightness: 0.82;
-  --middle-brightness: 0.5;
-  --right-brightness: 0.6;
-  --popout-modal-brightness: 0.7;
+  --serverlist-brightness: 0.64;
+  --left-brightness: 0.74;
+  --middle-brightness: 0.58;
+  --right-brightness: 0.5;
+  --popout-modal-brightness: 0.5;
   --gradient-primary: 63,81,181;
   --gradient-secondary: 63,81,181;
-  --link-colour: #4DB5FF;
+  --link-colour: #00b0f4;
   --scrollbar-colour: rgba(255,255,255,0.05);
   --gradient-direction: 320deg;
   --tint-colour: 96,96,96;
-  --tint-brightness: 0.5;
-  --window-padding: 17px;
-  --window-roundness: 15px;
+  --tint-brightness: 0.4;
+  --font: Whitney;
+  --window-padding: 12px;
+  --window-roundness: 18px;
   --update-notice-1: none;
   --HSL-server-icon-size: 45px;
   --HSL-server-spacing: 10px;
 }
 
-#app-mount .containerDefault-YUSmu3 .modeUnread-3Cxepe .content-1gYQeQ {
-  background: transparent !important;
-}
-
-:root {
-    --channels-default: #999;
-    --interactive-muted: #444;
-}
-
-#app-mount .mentioned-Tre-dv {
-  background: var(--background-mentioned) !important;
-}
-
-#app-mount .mentioned-Tre-dv:before {
-  background: var(--background-mentioned);
-}
-
-#app-mount .guilds-2JjMmN [class*=circleIconButton] {
-    background: rgba(255, 255, 255, 0.365);
-    color: rgb(255, 255, 255);
-}
-
-.container-ZMc96U.themed-Hp1KC {height:48px}
-.container-YkUktl {background-color: rgba(0, 0, 0, 0.25); 
-}
-
-.bd-minimal .guilds-2JjMmN {
-    width: 55px;
-}
-
-.listItem-1d8GP4 {
-    position: relative;
-    margin: 0 0 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 55px;
-}
-
-.layout-1qmrhw {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 40px;
-    height: 42px;
-    padding: 0 6px;
-}
-
-.name-3Vmqxm {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-}
-
-.privateChannelsHeaderContainer-1UWASm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 12px 10px 4px 12px;
-    height: 40px;
-}
-
-#app-mount .container-YkUktl {
-    position: relative;
-    background: linear-gradient(45deg, #4444446c, #444444a1)!important;
-    bottom:3px;
-    height: 50px;
-    margin-left: 0px;
-    max-width: 198px;
-    border-radius: 25px;
-}
-
-.title-3XlmeX {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: var(--header-primary);
-    line-height: 15px;
-    font-weight: 600;
-    margin-left: 10px;
-    font-size: 15px;
-}
-
-.bd-minimal .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
-    transform: scale(.95);
-    width: 32px;
-    height: 32px;
-}
-
-#status-picker .separator-1So4YB, #status-picker .description-3Cwkxk {
-  display: none;
-}
-
-#status-picker .focused-3qFvc8 {
-  background: linear-gradient(45deg, #2b45a2, #7289da);
-  border-radius: 20px;
-}
-
-#status-picker .focused-3qFvc8#status-picker-online {
-  background: linear-gradient(45deg, #21583f, #43b581);
-  border-radius: 20px;
-}
-
-#status-picker .focused-3qFvc8#status-picker-idle {
-  background: linear-gradient(45deg, #c7ab0b, #e2d276);
-  border-radius: 20px;
-}
-
-#status-picker .focused-3qFvc8#status-picker-dnd {
-  background: linear-gradient(45deg, #aa0e0e, #f04747);
-  border-radius: 20px;
-}
-
-#status-picker .focused-3qFvc8#status-picker-invisible {
-  background: linear-gradient(45deg, #3a4047, #747f8d);
-  border-radius: 20px;
-}
-
-.base-21yXnu {
-    font-weight: 600;
-    color: #ececec;
-}
-
-.container-2RRFHK {background: transparent; pointer-events: none}
-.container-2RRFHK>div {display: none}
-.container-2RRFHK::before {
-    content: "You've gone offline";
-    display: block;
-    bottom: 24px; right: 24px;
-    position: absolute;
-    padding: 8px 16px;
-    background-color: #f04747;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 500
-}
-
-  /* Other Extra variables */
-
-.containerDefault-YUSmu3 {
-  transition: all 0.5s;
-}
-.containerDefault-YUSmu3:hover {
-  transition: all 0.2s;
-  transform: translatex(-3px);
-}
-.containerDefault-YUSmu3:active {
-  transition: all 0.2s;
-  transform: translatex(1px);
-}
-.winButtonClose-3Q8ZH5, .winButtonMinMax-3RsPUg, .winButtonMinMax-3RsPUg{
-    transition: 0.5s ease;
-}
-
-/* Server hover animation */
-   
-    .wrapper-28eC3z {
-        transition: transform 0.2s;
-    }
-    .wrapper-28eC3z:hover {
-        transform: scale(1.1);
-    }
-
-/*Custom CSS Editor*/
-
-.profileBannerPremium-KD60EB {
-    width: 600px;
-    height: 200px;
-}
-/*chat bubble #5b5b5d, #36393f*/
-.cozyMessage-1DWF9U .contents-2MsGLg > .markup-eYLPri:not(:empty) {
- background: linear-gradient(
- 180deg,
- #6a6a6b,
- #36393f
- )
- no-repeat center;
- background-attachment: fixed;
- color: rgb(255, 255, 255);
- height: fit-content;
- width: fit-content;
- padding: 0.3rem 0.7rem;
- margin: 0.001rem 0.1rem;
- border-radius: 15px;
-}
-
-.scrollerInner-2PPAp2 .groupStart-3Mlgv1.cozyMessage-1DWF9U .contents-2MsGLg > .markup-eYLPri:not(:empty) {
-    border-radius: 15px 15px 15px 15px;
-}
-/*Hide help icon*/
-.toolbar-3_r2xA a {display: none;}
-
-[href="/store"] {
-    display: none;
-}
+/* Any custom CSS below here */
 
 
-    /*Pin and Inbox Background*/
-.header-1w9Q93 {
-    background-color: #272626;
-}
-
-.messageGroupWrapper-1jf_7C {
-    background-color: #37393E;
-}
-
-.messagesPopout-eVzQcI  {
-    background-color: #2E3036;
-}
-
-.scroller-145h9c  {
-    background-color: #37393E;
-}
-
-.tutorial-Nb3Zz5   {
-    background-color: #2E3036;
-}
-
-/*Join and add botton always down*/
-
-.scroller-3X7KbA {
-  contain: unset;
-  padding-bottom: 190px;
-}
-.scroller-3X7KbA::before {
-    content: "";
-    position: fixed;
-    bottom: 0;
-    width: 72px;
-    height: 190px;
-    background: linear-gradient(transparent, var(--background-tertiary) 30%);
-    z-index: 1;
-}
-.tutorialContainer-2jwoiB {
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-}
-.tutorialContainer-2jwoiB + .listItem-3SmSlK {
-    position: fixed;
-    bottom: 44px;
-    contain: none;
-    z-index: 1;
-}
-
-#app-mount .userInfo-2WpsYG .wrapper-1VLyxH {
-  margin-top: 35px;
-  margin-left: 30px;
-}
